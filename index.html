@@ -719,30 +719,30 @@
     <script>
         // ข้อมูลสินค้า
         let products = [
-            { id: 1, name: 'ผ้าไหมมัดหมี่', price: 1200, image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400', seller: 'ป้าแจ่ม - กลุ่มทอผ้า', category: 'ผ้าไทย', stock: 5, rating: 4.8 },
-            { id: 2, name: 'ผ้าขาวม้า', price: 350, image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400', seller: 'ป้าแจ่ม - กลุ่มทอผ้า', category: 'ผ้าไทย', stock: 15, rating: 4.6 },
-            { id: 3, name: 'ผ้าบาติก', price: 450, image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400', seller: 'น้าศรี - หัตถกรรม', category: 'ผ้าไทย', stock: 8, rating: 4.7 },
-            { id: 4, name: 'ผ้าทอมือลายดอก', price: 890, image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400', seller: 'ป้าแจ่ม - กลุ่มทอผ้า', category: 'ผ้าไทย', stock: 6, rating: 4.9 },
-            { id: 5, name: 'กระเป๋าจักสาน', price: 450, image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400', seller: 'น้าสมหมาย - หัตถกรรม', category: 'ของใช้', stock: 10, rating: 4.5 },
-            { id: 6, name: 'กระเป๋าสานย้อมสี', price: 380, image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400', seller: 'น้าสมหมาย - หัตถกรรม', category: 'ของใช้', stock: 12, rating: 4.6 },
-            { id: 7, name: 'ตะกร้าหวายใส่ของ', price: 280, image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400', seller: 'ลุงบุญ - หัตถกรรม', category: 'ของใช้', stock: 20, rating: 4.4 },
-            { id: 8, name: 'พวงกุญแจไม้แกะสลัก', price: 60, image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของใช้', stock: 50, rating: 4.8 },
-            { id: 9, name: 'กระเป๋าผ้าปักลาย', price: 320, image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400', seller: 'น้าศรี - หัตถกรรม', category: 'ของใช้', stock: 15, rating: 4.7 },
-            { id: 10, name: 'น้ำพริกหนุ่ม', price: 120, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ป้าจันทร์ - อาหารแปรรูป', category: 'อาหาร', stock: 20, rating: 5.0 },
-            { id: 11, name: 'น้ำพริกเผา', price: 100, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ป้าจันทร์ - อาหารแปรรูป', category: 'อาหาร', stock: 25, rating: 4.9 },
-            { id: 12, name: 'น้ำพริกปลาร้า', price: 90, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ป้าจันทร์ - อาหารแปรรูป', category: 'อาหาร', stock: 18, rating: 4.8 },
-            { id: 13, name: 'ข้าวเกรียบกุ้ง', price: 80, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ป้าวัลย์ - ขนมไทย', category: 'อาหาร', stock: 30, rating: 4.7 },
-            { id: 14, name: 'ข้าวเกรียบปลา', price: 70, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ป้าวัลย์ - ขนมไทย', category: 'อาหาร', stock: 35, rating: 4.6 },
-            { id: 15, name: 'ขนมครกโบราณ', price: 150, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ป้าวัลย์ - ขนมไทย', category: 'อาหาร', stock: 10, rating: 5.0 },
-            { id: 16, name: 'น้ำผึ้งป่าแท้', price: 350, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ลุงเจริญ - ของป่า', category: 'อาหาร', stock: 8, rating: 5.0 },
-            { id: 17, name: 'กาแฟคั่วมือ', price: 180, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ลุงสมพร - กาแฟชุมชน', category: 'อาหาร', stock: 22, rating: 4.9 },
-            { id: 18, name: 'ชาสมุนไพร', price: 120, image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400', seller: 'ลุงสมพร - กาแฟชุมชน', category: 'อาหาร', stock: 15, rating: 4.8 },
-            { id: 19, name: 'เครื่องปั้นดินเผา', price: 680, image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 8, rating: 4.7 },
-            { id: 20, name: 'แจกันดินเผาวาดลาย', price: 450, image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 6, rating: 4.6 },
-            { id: 21, name: 'โคมไฟไม้สานโบราณ', price: 890, image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400', seller: 'ลุงบุญ - หัตถกรรม', category: 'ของตั้ง', stock: 5, rating: 4.9 },
-            { id: 22, name: 'ตุ๊กตาผ้าทำมือ', price: 250, image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400', seller: 'น้าศรี - หัตถกรรม', category: 'ของตั้ง', stock: 12, rating: 4.8 },
-            { id: 23, name: 'กรอบรูปไม้แกะสลัก', price: 380, image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 10, rating: 4.7 },
-            { id: 24, name: 'ช้างไม้แกะสลัก', price: 550, image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 7, rating: 4.9 }
+            { id: 1, name: 'ผ้าไหมมัดหมี่', price: 1200, image: 'https://placehold.co/400x300/f97316/white?text=ผ้าไหมมัดหมี่', seller: 'ป้าแจ่ม - กลุ่มทอผ้า', category: 'ผ้าไทย', stock: 5, rating: 4.8 },
+            { id: 2, name: 'ผ้าขาวม้า', price: 350, image: 'https://placehold.co/400x300/fb923c/white?text=ผ้าขาวม้า', seller: 'ป้าแจ่ม - กลุ่มทอผ้า', category: 'ผ้าไทย', stock: 15, rating: 4.6 },
+            { id: 3, name: 'ผ้าบาติก', price: 450, image: 'https://placehold.co/400x300/fdba74/white?text=ผ้าบาติก', seller: 'น้าศรี - หัตถกรรม', category: 'ผ้าไทย', stock: 8, rating: 4.7 },
+            { id: 4, name: 'ผ้าทอมือลายดอก', price: 890, image: 'https://placehold.co/400x300/fed7aa/333?text=ผ้าทอมือลายดอก', seller: 'ป้าแจ่ม - กลุ่มทอผ้า', category: 'ผ้าไทย', stock: 6, rating: 4.9 },
+            { id: 5, name: 'กระเป๋าจักสาน', price: 450, image: 'https://placehold.co/400x300/84cc16/white?text=กระเป๋าจักสาน', seller: 'น้าสมหมาย - หัตถกรรม', category: 'ของใช้', stock: 10, rating: 4.5 },
+            { id: 6, name: 'กระเป๋าสานย้อมสี', price: 380, image: 'https://placehold.co/400x300/a3e635/white?text=กระเป๋าสานย้อมสี', seller: 'น้าสมหมาย - หัตถกรรม', category: 'ของใช้', stock: 12, rating: 4.6 },
+            { id: 7, name: 'ตะกร้าหวายใส่ของ', price: 280, image: 'https://placehold.co/400x300/bef264/333?text=ตะกร้าหวาย', seller: 'ลุงบุญ - หัตถกรรม', category: 'ของใช้', stock: 20, rating: 4.4 },
+            { id: 8, name: 'พวงกุญแจไม้แกะสลัก', price: 60, image: 'https://placehold.co/400x300/d9f99d/333?text=พวงกุญแจไม้', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของใช้', stock: 50, rating: 4.8 },
+            { id: 9, name: 'กระเป๋าผ้าปักลาย', price: 320, image: 'https://placehold.co/400x300/ecfccb/333?text=กระเป๋าผ้าปัก', seller: 'น้าศรี - หัตถกรรม', category: 'ของใช้', stock: 15, rating: 4.7 },
+            { id: 10, name: 'น้ำพริกหนุ่ม', price: 120, image: 'https://placehold.co/400x300/dc2626/white?text=น้ำพริกหนุ่ม', seller: 'ป้าจันทร์ - อาหารแปรรูป', category: 'อาหาร', stock: 20, rating: 5.0 },
+            { id: 11, name: 'น้ำพริกเผา', price: 100, image: 'https://placehold.co/400x300/ef4444/white?text=น้ำพริกเผา', seller: 'ป้าจันทร์ - อาหารแปรรูป', category: 'อาหาร', stock: 25, rating: 4.9 },
+            { id: 12, name: 'น้ำพริกปลาร้า', price: 90, image: 'https://placehold.co/400x300/f87171/white?text=น้ำพริกปลาร้า', seller: 'ป้าจันทร์ - อาหารแปรรูป', category: 'อาหาร', stock: 18, rating: 4.8 },
+            { id: 13, name: 'ข้าวเกรียบกุ้ง', price: 80, image: 'https://placehold.co/400x300/fca5a5/white?text=ข้าวเกรียบกุ้ง', seller: 'ป้าวัลย์ - ขนมไทย', category: 'อาหาร', stock: 30, rating: 4.7 },
+            { id: 14, name: 'ข้าวเกรียบปลา', price: 70, image: 'https://placehold.co/400x300/fecaca/333?text=ข้าวเกรียบปลา', seller: 'ป้าวัลย์ - ขนมไทย', category: 'อาหาร', stock: 35, rating: 4.6 },
+            { id: 15, name: 'ขนมครกโบราณ', price: 150, image: 'https://placehold.co/400x300/c2410c/white?text=ขนมครก', seller: 'ป้าวัลย์ - ขนมไทย', category: 'อาหาร', stock: 10, rating: 5.0 },
+            { id: 16, name: 'น้ำผึ้งป่าแท้', price: 350, image: 'https://placehold.co/400x300/eab308/white?text=น้ำผึ้งป่า', seller: 'ลุงเจริญ - ของป่า', category: 'อาหาร', stock: 8, rating: 5.0 },
+            { id: 17, name: 'กาแฟคั่วมือ', price: 180, image: 'https://placehold.co/400x300/78350f/white?text=กาแฟคั่วมือ', seller: 'ลุงสมพร - กาแฟชุมชน', category: 'อาหาร', stock: 22, rating: 4.9 },
+            { id: 18, name: 'ชาสมุนไพร', price: 120, image: 'https://placehold.co/400x300/a16207/white?text=ชาสมุนไพร', seller: 'ลุงสมพร - กาแฟชุมชน', category: 'อาหาร', stock: 15, rating: 4.8 },
+            { id: 19, name: 'เครื่องปั้นดินเผา', price: 680, image: 'https://placehold.co/400x300/9333ea/white?text=เครื่องปั้นดินเผา', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 8, rating: 4.7 },
+            { id: 20, name: 'แจกันดินเผาวาดลาย', price: 450, image: 'https://placehold.co/400x300/a855f7/white?text=แจกันดินเผา', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 6, rating: 4.6 },
+            { id: 21, name: 'โคมไฟไม้สานโบราณ', price: 890, image: 'https://placehold.co/400x300/c084fc/white?text=โคมไฟไม้สาน', seller: 'ลุงบุญ - หัตถกรรม', category: 'ของตั้ง', stock: 5, rating: 4.9 },
+            { id: 22, name: 'ตุ๊กตาผ้าทำมือ', price: 250, image: 'https://placehold.co/400x300/e9d5ff/333?text=ตุ๊กตาผ้า', seller: 'น้าศรี - หัตถกรรม', category: 'ของตั้ง', stock: 12, rating: 4.8 },
+            { id: 23, name: 'กรอบรูปไม้แกะสลัก', price: 380, image: 'https://placehold.co/400x300/f5d0fe/333?text=กรอบรูปไม้', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 10, rating: 4.7 },
+            { id: 24, name: 'ช้างไม้แกะสลัก', price: 550, image: 'https://placehold.co/400x300/fae8ff/333?text=ช้างไม้แกะสลัก', seller: 'ลุงสมชาย - หัตถกรรม', category: 'ของตั้ง', stock: 7, rating: 4.9 }
         ];
 
         let cart = [];
@@ -977,7 +977,7 @@
                 price: price,
                 stock: stock,
                 category: category,
-                image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400',
+                image: `https://placehold.co/400x300/6366f1/white?text=${encodeURIComponent(name)}`,
                 seller: 'ร้านของฉัน',
                 rating: 5.0
             };
