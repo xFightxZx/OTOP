@@ -1,0 +1,67 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Sarabun', sans-serif; /* แนะนำให้ใช้ฟอนต์ไทยสวยๆ */
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ความสูงเต็มจอ */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* การ์ดสินค้า */
+.product-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เงาฟุ้งๆ */
+    overflow: hidden;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* เมาส์ชี้แล้วลอยขึ้นนิดนึง */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* ปุ่มกด */
+.btn-buy {
+    background-color: #27ae60; /* สีเขียว */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-buy:hover {
+    background-color: #219150; /* สีเขียวเข้มเมื่อเอาเมาส์ชี้ */
+}
+
+.cart-info {
+    font-size: 18px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
